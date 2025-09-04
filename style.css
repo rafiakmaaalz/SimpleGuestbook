@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding */
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Pesan List Styling */
+.pesan-item {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pesan-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+.pesan-item small {
+    color: #999;
+    font-size: 0.8em;
+}
+
+.pesan-item p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.pesan-item .aksi {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.pesan-item .aksi a {
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.aksi a.edit {
+    background-color: #ffc107;
+    color: #333;
+}
+.aksi a.hapus {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Validation Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.alert-error {
+    background-color: #dc3545; /* Merah */
+}
+
+.alert-success {
+    background-color: #28a745; /* Hijau */
+}
